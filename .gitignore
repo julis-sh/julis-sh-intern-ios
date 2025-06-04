@@ -1,1 +1,55 @@
-julis-sh-intern-ios/Info.plist
+# Xcode
+.DS_Store
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xcscmblueprint
+
+# SwiftPM
+.build/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# App data
+*.xcuserstate
+*.moved-aside
+*.xcuserdatad
+*.orig
+*.swp
+*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+
+# SPM
+SourcePackages/
+
+# Xcode Cloud
+.xcresults/
+
+# Sonstige
+*.log
+*.tmp
+
+# Testdaten
+*.xcresult
+
+# Lokale Umgebungsdateien
+Info.plist
