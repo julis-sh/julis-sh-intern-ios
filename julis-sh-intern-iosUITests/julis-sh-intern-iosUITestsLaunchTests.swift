@@ -1,13 +1,13 @@
 //
-//  mitgliederinfoUITestsLaunchTests.swift
-//  mitgliederinfoUITests
+//  julis-sh-intern-iosUITestsLaunchTests.swift
+//  julis-sh-intern-iosUITests
 //
 //  Created by Luca Stephan Kohls on 01.06.25.
 //
 
 import XCTest
 
-final class mitgliederinfoUITestsLaunchTests: XCTestCase {
+final class julis-sh-intern-iosUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

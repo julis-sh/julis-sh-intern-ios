@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>MSUAHT_LINK</string>
+			</array>
+		</dict>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>msauthv2</string>
+		<string>msauthv3</string>
+	</array>
+	<key>API_URL</key>
+	<string>API_URL</string>
+	<key>MSAL_CLIENT_ID</key>
+	<string>MS_CLIENT_ID</string>
+	<key>MSAL_TENANT_ID</key>
+	<string>MS_TENANT_ID</string>
+	<key>MSAL_REDIRECT_URI</key>
+	<string>MS_REDIRECT_URI</string>
+</dict>
+</plist>

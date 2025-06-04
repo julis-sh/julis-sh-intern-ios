@@ -6,43 +6,60 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B63FCA482DECDF22000BADC4 /* MSAL in Frameworks */ = {isa = PBXBuildFile; productRef = B63FCA472DECDF22000BADC4 /* MSAL */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B6023DDA2DECCF2F005C3BA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B6023DC42DECCF2E005C3BA3 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B6023DCB2DECCF2E005C3BA3;
-			remoteInfo = mitgliederinfo;
+			remoteInfo = julis-sh-intern-ios;
 		};
 		B6023DE42DECCF2F005C3BA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B6023DC42DECCF2E005C3BA3 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B6023DCB2DECCF2E005C3BA3;
-			remoteInfo = mitgliederinfo;
+			remoteInfo = julis-sh-intern-ios;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B6023DCC2DECCF2E005C3BA3 /* mitgliederinfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mitgliederinfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6023DD92DECCF2F005C3BA3 /* mitgliederinfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mitgliederinfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6023DE32DECCF2F005C3BA3 /* mitgliederinfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mitgliederinfoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6023DCC2DECCF2E005C3BA3 /* julis-sh-intern-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = julis-sh-intern-ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6023DD92DECCF2F005C3BA3 /* julis-sh-intern-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = julis-sh-intern-iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6023DE32DECCF2F005C3BA3 /* julis-sh-intern-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = julis-sh-intern-iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B60EA9892DECDAA4003EF017 /* Exceptions for "julis-sh-intern-ios" folder in "julis-sh-intern-ios" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B6023DCB2DECCF2E005C3BA3 /* julis-sh-intern-ios */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		B6023DCE2DECCF2E005C3BA3 /* mitgliederinfo */ = {
+		B6023DCE2DECCF2E005C3BA3 /* julis-sh-intern-ios */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = mitgliederinfo;
+			exceptions = (
+				B60EA9892DECDAA4003EF017 /* Exceptions for "julis-sh-intern-ios" folder in "julis-sh-intern-ios" target */,
+			);
+			path = julis-sh-intern-ios;
 			sourceTree = "<group>";
 		};
-		B6023DDC2DECCF2F005C3BA3 /* mitgliederinfoTests */ = {
+		B6023DDC2DECCF2F005C3BA3 /* julis-sh-intern-iosTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = mitgliederinfoTests;
+			path = julis-sh-intern-iosTests;
 			sourceTree = "<group>";
 		};
-		B6023DE62DECCF2F005C3BA3 /* mitgliederinfoUITests */ = {
+		B6023DE62DECCF2F005C3BA3 /* julis-sh-intern-iosUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = mitgliederinfoUITests;
+			path = julis-sh-intern-iosUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63FCA482DECDF22000BADC4 /* MSAL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +93,10 @@
 		B6023DC32DECCF2E005C3BA3 = {
 			isa = PBXGroup;
 			children = (
-				B6023DCE2DECCF2E005C3BA3 /* mitgliederinfo */,
-				B6023DDC2DECCF2F005C3BA3 /* mitgliederinfoTests */,
-				B6023DE62DECCF2F005C3BA3 /* mitgliederinfoUITests */,
+				B6023DCE2DECCF2E005C3BA3 /* julis-sh-intern-ios */,
+				B6023DDC2DECCF2F005C3BA3 /* julis-sh-intern-iosTests */,
+				B6023DE62DECCF2F005C3BA3 /* julis-sh-intern-iosUITests */,
+				B63FCA462DECDF22000BADC4 /* Frameworks */,
 				B6023DCD2DECCF2E005C3BA3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,19 +104,26 @@
 		B6023DCD2DECCF2E005C3BA3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B6023DCC2DECCF2E005C3BA3 /* mitgliederinfo.app */,
-				B6023DD92DECCF2F005C3BA3 /* mitgliederinfoTests.xctest */,
-				B6023DE32DECCF2F005C3BA3 /* mitgliederinfoUITests.xctest */,
+				B6023DCC2DECCF2E005C3BA3 /* julis-sh-intern-ios.app */,
+				B6023DD92DECCF2F005C3BA3 /* julis-sh-intern-iosTests.xctest */,
+				B6023DE32DECCF2F005C3BA3 /* julis-sh-intern-iosUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B63FCA462DECDF22000BADC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B6023DCB2DECCF2E005C3BA3 /* mitgliederinfo */ = {
+		B6023DCB2DECCF2E005C3BA3 /* julis-sh-intern-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6023DED2DECCF2F005C3BA3 /* Build configuration list for PBXNativeTarget "mitgliederinfo" */;
+			buildConfigurationList = B6023DED2DECCF2F005C3BA3 /* Build configuration list for PBXNativeTarget "julis-sh-intern-ios" */;
 			buildPhases = (
 				B6023DC82DECCF2E005C3BA3 /* Sources */,
 				B6023DC92DECCF2E005C3BA3 /* Frameworks */,
@@ -108,18 +134,19 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				B6023DCE2DECCF2E005C3BA3 /* mitgliederinfo */,
+				B6023DCE2DECCF2E005C3BA3 /* julis-sh-intern-ios */,
 			);
-			name = mitgliederinfo;
+			name = julis-sh-intern-ios;
 			packageProductDependencies = (
+				B63FCA472DECDF22000BADC4 /* MSAL */,
 			);
-			productName = mitgliederinfo;
-			productReference = B6023DCC2DECCF2E005C3BA3 /* mitgliederinfo.app */;
+			productName = julis-sh-intern-ios;
+			productReference = B6023DCC2DECCF2E005C3BA3 /* julis-sh-intern-ios.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B6023DD82DECCF2F005C3BA3 /* mitgliederinfoTests */ = {
+		B6023DD82DECCF2F005C3BA3 /* julis-sh-intern-iosTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6023DF02DECCF2F005C3BA3 /* Build configuration list for PBXNativeTarget "mitgliederinfoTests" */;
+			buildConfigurationList = B6023DF02DECCF2F005C3BA3 /* Build configuration list for PBXNativeTarget "julis-sh-intern-iosTests" */;
 			buildPhases = (
 				B6023DD52DECCF2F005C3BA3 /* Sources */,
 				B6023DD62DECCF2F005C3BA3 /* Frameworks */,
@@ -131,18 +158,18 @@
 				B6023DDB2DECCF2F005C3BA3 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B6023DDC2DECCF2F005C3BA3 /* mitgliederinfoTests */,
+				B6023DDC2DECCF2F005C3BA3 /* julis-sh-intern-iosTests */,
 			);
-			name = mitgliederinfoTests;
+			name = julis-sh-intern-iosTests;
 			packageProductDependencies = (
 			);
-			productName = mitgliederinfoTests;
-			productReference = B6023DD92DECCF2F005C3BA3 /* mitgliederinfoTests.xctest */;
+			productName = julis-sh-intern-iosTests;
+			productReference = B6023DD92DECCF2F005C3BA3 /* julis-sh-intern-iosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B6023DE22DECCF2F005C3BA3 /* mitgliederinfoUITests */ = {
+		B6023DE22DECCF2F005C3BA3 /* julis-sh-intern-iosUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6023DF32DECCF2F005C3BA3 /* Build configuration list for PBXNativeTarget "mitgliederinfoUITests" */;
+			buildConfigurationList = B6023DF32DECCF2F005C3BA3 /* Build configuration list for PBXNativeTarget "julis-sh-intern-iosUITests" */;
 			buildPhases = (
 				B6023DDF2DECCF2F005C3BA3 /* Sources */,
 				B6023DE02DECCF2F005C3BA3 /* Frameworks */,
@@ -154,13 +181,13 @@
 				B6023DE52DECCF2F005C3BA3 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B6023DE62DECCF2F005C3BA3 /* mitgliederinfoUITests */,
+				B6023DE62DECCF2F005C3BA3 /* julis-sh-intern-iosUITests */,
 			);
-			name = mitgliederinfoUITests;
+			name = julis-sh-intern-iosUITests;
 			packageProductDependencies = (
 			);
-			productName = mitgliederinfoUITests;
-			productReference = B6023DE32DECCF2F005C3BA3 /* mitgliederinfoUITests.xctest */;
+			productName = julis-sh-intern-iosUITests;
+			productReference = B6023DE32DECCF2F005C3BA3 /* julis-sh-intern-iosUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B6023DC72DECCF2E005C3BA3 /* Build configuration list for PBXProject "mitgliederinfo" */;
+			buildConfigurationList = B6023DC72DECCF2E005C3BA3 /* Build configuration list for PBXProject "julis-sh-intern-ios" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -195,14 +222,17 @@
 			);
 			mainGroup = B6023DC32DECCF2E005C3BA3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B60EA9852DECD6E7003EF017 /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B6023DCD2DECCF2E005C3BA3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B6023DCB2DECCF2E005C3BA3 /* mitgliederinfo */,
-				B6023DD82DECCF2F005C3BA3 /* mitgliederinfoTests */,
-				B6023DE22DECCF2F005C3BA3 /* mitgliederinfoUITests */,
+				B6023DCB2DECCF2E005C3BA3 /* julis-sh-intern-ios */,
+				B6023DD82DECCF2F005C3BA3 /* julis-sh-intern-iosTests */,
+				B6023DE22DECCF2F005C3BA3 /* julis-sh-intern-iosUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +288,12 @@
 /* Begin PBXTargetDependency section */
 		B6023DDB2DECCF2F005C3BA3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B6023DCB2DECCF2E005C3BA3 /* mitgliederinfo */;
+			target = B6023DCB2DECCF2E005C3BA3 /* julis-sh-intern-ios */;
 			targetProxy = B6023DDA2DECCF2F005C3BA3 /* PBXContainerItemProxy */;
 		};
 		B6023DE52DECCF2F005C3BA3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B6023DCB2DECCF2E005C3BA3 /* mitgliederinfo */;
+			target = B6023DCB2DECCF2E005C3BA3 /* julis-sh-intern-ios */;
 			targetProxy = B6023DE42DECCF2F005C3BA3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -395,23 +425,33 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4YARQ6JY88;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = julis-sh-intern-ios/julis-sh-intern-ios.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9L26U4UZ48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = julis-sh-intern-ios/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "JuLis SH Intern";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = omp.mitgliederinfo;
+				PRODUCT_BUNDLE_IDENTIFIER = de.julis.sh.intern;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "JuLis SH Intern";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -423,23 +463,33 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4YARQ6JY88;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = julis-sh-intern-ios/julis-sh-intern-ios.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9L26U4UZ48;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = julis-sh-intern-ios/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "JuLis SH Intern";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = omp.mitgliederinfo;
+				PRODUCT_BUNDLE_IDENTIFIER = de.julis.sh.intern;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "JuLis SH Intern";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,12 +506,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = omp.mitgliederinfoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = omp.julis-sh-intern-iosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mitgliederinfo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mitgliederinfo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/julis-sh-intern-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/julis-sh-intern-ios";
 			};
 			name = Debug;
 		};
@@ -475,12 +525,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = omp.mitgliederinfoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = omp.julis-sh-intern-iosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mitgliederinfo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mitgliederinfo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/julis-sh-intern-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/julis-sh-intern-ios";
 			};
 			name = Release;
 		};
@@ -492,12 +542,12 @@
 				DEVELOPMENT_TEAM = 4YARQ6JY88;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = omp.mitgliederinfoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = omp.julis-sh-intern-iosUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = mitgliederinfo;
+				TEST_TARGET_NAME = julis-sh-intern-ios;
 			};
 			name = Debug;
 		};
@@ -509,19 +559,19 @@
 				DEVELOPMENT_TEAM = 4YARQ6JY88;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = omp.mitgliederinfoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = omp.julis-sh-intern-iosUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = mitgliederinfo;
+				TEST_TARGET_NAME = julis-sh-intern-ios;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B6023DC72DECCF2E005C3BA3 /* Build configuration list for PBXProject "mitgliederinfo" */ = {
+		B6023DC72DECCF2E005C3BA3 /* Build configuration list for PBXProject "julis-sh-intern-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6023DEB2DECCF2F005C3BA3 /* Debug */,
@@ -530,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6023DED2DECCF2F005C3BA3 /* Build configuration list for PBXNativeTarget "mitgliederinfo" */ = {
+		B6023DED2DECCF2F005C3BA3 /* Build configuration list for PBXNativeTarget "julis-sh-intern-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6023DEE2DECCF2F005C3BA3 /* Debug */,
@@ -539,7 +589,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6023DF02DECCF2F005C3BA3 /* Build configuration list for PBXNativeTarget "mitgliederinfoTests" */ = {
+		B6023DF02DECCF2F005C3BA3 /* Build configuration list for PBXNativeTarget "julis-sh-intern-iosTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6023DF12DECCF2F005C3BA3 /* Debug */,
@@ -548,7 +598,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6023DF32DECCF2F005C3BA3 /* Build configuration list for PBXNativeTarget "mitgliederinfoUITests" */ = {
+		B6023DF32DECCF2F005C3BA3 /* Build configuration list for PBXNativeTarget "julis-sh-intern-iosUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6023DF42DECCF2F005C3BA3 /* Debug */,
@@ -558,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B60EA9852DECD6E7003EF017 /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AzureAD/microsoft-authentication-library-for-objc";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B63FCA472DECDF22000BADC4 /* MSAL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B60EA9852DECD6E7003EF017 /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */;
+			productName = MSAL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B6023DC42DECCF2E005C3BA3 /* Project object */;
 }

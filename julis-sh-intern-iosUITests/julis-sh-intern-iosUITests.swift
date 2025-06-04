@@ -1,13 +1,13 @@
 //
-//  mitgliederinfoUITests.swift
-//  mitgliederinfoUITests
+//  julis-sh-intern-iosUITests.swift
+//  julis-sh-intern-iosUITests
 //
 //  Created by Luca Stephan Kohls on 01.06.25.
 //
 
 import XCTest
 
-final class mitgliederinfoUITests: XCTestCase {
+final class julis-sh-intern-iosUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
