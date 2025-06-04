@@ -6,10 +6,37 @@ class MicrosoftAuthManager {
     static let shared = MicrosoftAuthManager()
     private var applicationContext: MSALPublicClientApplication?
     
-    // Werte aus Info.plist lesen
-    private let clientId = Bundle.main.infoDictionary?["MSAL_CLIENT_ID"] as? String ?? ""
-    private let redirectUri = Bundle.main.infoDictionary?["MSAL_REDIRECT_URI"] as? String ?? ""
-    private let tenantId = Bundle.main.infoDictionary?["MSAL_TENANT_ID"] as? String ?? ""
+    // MSAL-Werte je nach Build-Konfiguration aus Info.plist lesen
+    private static var resolvedClientId: String {
+        #if DEBUG
+        return Bundle.main.infoDictionary?["MSAL_CLIENT_ID_DEV"] as? String ?? Bundle.main.infoDictionary?["MSAL_CLIENT_ID"] as? String ?? ""
+        #elseif TEST
+        return Bundle.main.infoDictionary?["MSAL_CLIENT_ID_TEST"] as? String ?? Bundle.main.infoDictionary?["MSAL_CLIENT_ID"] as? String ?? ""
+        #else
+        return Bundle.main.infoDictionary?["MSAL_CLIENT_ID"] as? String ?? ""
+        #endif
+    }
+    private static var resolvedTenantId: String {
+        #if DEBUG
+        return Bundle.main.infoDictionary?["MSAL_TENANT_ID_DEV"] as? String ?? Bundle.main.infoDictionary?["MSAL_TENANT_ID"] as? String ?? ""
+        #elseif TEST
+        return Bundle.main.infoDictionary?["MSAL_TENANT_ID_TEST"] as? String ?? Bundle.main.infoDictionary?["MSAL_TENANT_ID"] as? String ?? ""
+        #else
+        return Bundle.main.infoDictionary?["MSAL_TENANT_ID"] as? String ?? ""
+        #endif
+    }
+    private static var resolvedRedirectUri: String {
+        #if DEBUG
+        return Bundle.main.infoDictionary?["MSAL_REDIRECT_URI_DEV"] as? String ?? Bundle.main.infoDictionary?["MSAL_REDIRECT_URI"] as? String ?? ""
+        #elseif TEST
+        return Bundle.main.infoDictionary?["MSAL_REDIRECT_URI_TEST"] as? String ?? Bundle.main.infoDictionary?["MSAL_REDIRECT_URI"] as? String ?? ""
+        #else
+        return Bundle.main.infoDictionary?["MSAL_REDIRECT_URI"] as? String ?? ""
+        #endif
+    }
+    private var clientId: String { Self.resolvedClientId }
+    private var tenantId: String { Self.resolvedTenantId }
+    private var redirectUri: String { Self.resolvedRedirectUri }
     private var authority: String { "https://login.microsoftonline.com/\(tenantId)" }
     
     // Fehler für UI

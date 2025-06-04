@@ -4,8 +4,17 @@ class APIService {
     static let shared = APIService()
     private init() {}
     
-    // Basis-URL aus Info.plist lesen
-    private let baseURL: String = Bundle.main.infoDictionary?["API_URL"] as? String ?? "https://api.jlssrv.de/mitgliederinfo/"
+    // Basis-URL je nach Build-Konfiguration aus Info.plist lesen
+    private static var resolvedBaseURL: String {
+        #if DEBUG
+        return Bundle.main.infoDictionary?["API_URL_DEV"] as? String ?? Bundle.main.infoDictionary?["API_URL"] as? String ?? "https://api.jlssrv.de/mitgliederinfo/"
+        #elseif TEST
+        return Bundle.main.infoDictionary?["API_URL_TEST"] as? String ?? Bundle.main.infoDictionary?["API_URL"] as? String ?? "https://api.jlssrv.de/mitgliederinfo/"
+        #else
+        return Bundle.main.infoDictionary?["API_URL"] as? String ?? "https://api.jlssrv.de/mitgliederinfo/"
+        #endif
+    }
+    private let baseURL: String = APIService.resolvedBaseURL
     
     var lastUserObject: [String: Any]? = nil
     
