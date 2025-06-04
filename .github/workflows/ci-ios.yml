@@ -22,10 +22,10 @@ jobs:
           pod install || true
       - name: Patch Info.plist mit Secrets (optional)
         run: |
-          if [ ! -z "${{ secrets.API_URL }}" ]; then /usr/libexec/PlistBuddy -c "Set :API_URL ${{ secrets.API_URL }}" ios/julis-sh-intern-ios/julis-sh-intern-ios/Info.plist; fi
-          if [ ! -z "${{ secrets.MSAL_CLIENT_ID }}" ]; then /usr/libexec/PlistBuddy -c "Set :MSAL_CLIENT_ID ${{ secrets.MSAL_CLIENT_ID }}" ios/julis-sh-intern-ios/julis-sh-intern-ios/Info.plist; fi
-          if [ ! -z "${{ secrets.MSAL_TENANT_ID }}" ]; then /usr/libexec/PlistBuddy -c "Set :MSAL_TENANT_ID ${{ secrets.MSAL_TENANT_ID }}" ios/julis-sh-intern-ios/julis-sh-intern-ios/Info.plist; fi
-          if [ ! -z "${{ secrets.MSAL_REDIRECT_URI }}" ]; then /usr/libexec/PlistBuddy -c "Set :MSAL_REDIRECT_URI ${{ secrets.MSAL_REDIRECT_URI }}" ios/julis-sh-intern-ios/julis-sh-intern-ios/Info.plist; fi
+          if [ ! -z "${{ secrets.API_URL_TEST }}" ]; then /usr/libexec/PlistBuddy -c "Set :API_URL_TEST ${{ secrets.API_URL_TEST }}" ios/julis-sh-intern-ios/julis-sh-intern-ios/Info.plist; fi
+          if [ ! -z "${{ secrets.MSAL_CLIENT_ID_TEST }}" ]; then /usr/libexec/PlistBuddy -c "Set :MSAL_CLIENT_ID_TEST ${{ secrets.MSAL_CLIENT_ID_TEST }}" ios/julis-sh-intern-ios/julis-sh-intern-ios/Info.plist; fi
+          if [ ! -z "${{ secrets.MSAL_TENANT_ID_TEST }}" ]; then /usr/libexec/PlistBuddy -c "Set :MSAL_TENANT_ID_TEST ${{ secrets.MSAL_TENANT_ID_TEST }}" ios/julis-sh-intern-ios/julis-sh-intern-ios/Info.plist; fi
+          if [ ! -z "${{ secrets.MSAL_REDIRECT_URI_TEST }}" ]; then /usr/libexec/PlistBuddy -c "Set :MSAL_REDIRECT_URI_TEST ${{ secrets.MSAL_REDIRECT_URI_TEST }}" ios/julis-sh-intern-ios/julis-sh-intern-ios/Info.plist; fi
       - name: Build app
         run: |
           cd ios/julis-sh-intern-ios
